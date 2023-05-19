@@ -49,12 +49,12 @@ resource "pagerduty_service" "example_application_database" {
 resource "pagerduty_service_dependency" "example_application_website" {
   dependency {
     dependent_service {
-      id    = pagerduty_business_service.example_application.id
-      type  = "business_service"
+      id   = pagerduty_business_service.example_application.id
+      type = "business_service"
     }
     supporting_service {
-      id    = pagerduty_service.example_application_website.id
-      type  = "service"
+      id   = pagerduty_service.example_application_website.id
+      type = "service"
     }
   }
 }
@@ -62,12 +62,12 @@ resource "pagerduty_service_dependency" "example_application_website" {
 resource "pagerduty_service_dependency" "example_application_database" {
   dependency {
     dependent_service {
-      id    = pagerduty_business_service.example_application.id
-      type  = "business_service"
+      id   = pagerduty_business_service.example_application.id
+      type = "business_service"
     }
     supporting_service {
-      id    = pagerduty_service.example_application_database.id
-      type  = "service"
+      id   = pagerduty_service.example_application_database.id
+      type = "service"
     }
   }
 }
@@ -91,10 +91,10 @@ resource "pagerduty_service_integration" "example_application_database_splunk" {
   Technical Service Maintenance Window (e.g. disable creation of incidents during Christmas)
 */
 resource "pagerduty_maintenance_window" "christmas_downtime" {
-  start_time  = format("%s-12-24T17:00:00-00:00", formatdate("YYYY", timestamp()))
-  end_time    = format("%s-12-26T09:00:00-00:00", formatdate("YYYY", timestamp()))
-  services    = [
-                pagerduty_service.example_application_website.id,
-                pagerduty_service.example_application_database.id
-              ]
+  start_time = format("%s-12-24T17:00:00-00:00", formatdate("YYYY", timestamp()))
+  end_time   = format("%s-12-26T09:00:00-00:00", formatdate("YYYY", timestamp()))
+  services = [
+    pagerduty_service.example_application_website.id,
+    pagerduty_service.example_application_database.id
+  ]
 }

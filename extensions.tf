@@ -10,18 +10,18 @@
   Website Extension
 */
 resource "pagerduty_extension" "example_application_website_webhook_1" {
-  name                = "Invoke Webhook - Website"
-  endpoint_url        = var.webhook_url
-  extension_schema    = data.pagerduty_extension_schema.custom_incident_action.id
-  extension_objects   = [pagerduty_service.example_application_website.id]
+  name              = "Invoke Webhook - Website"
+  endpoint_url      = var.webhook_url
+  extension_schema  = data.pagerduty_extension_schema.custom_incident_action.id
+  extension_objects = [pagerduty_service.example_application_website.id]
 }
 
 /* 
   Database Extension
 */
 resource "pagerduty_extension" "example_application_database_webhook_1" {
-  name                = "Invoke Webhook - Database"
-  endpoint_url        = var.webhook_url
-  extension_schema    = data.pagerduty_extension_schema.custom_incident_action.id
-  extension_objects   = [pagerduty_service.example_application_database.id]
+  name              = "Invoke Webhook - Database"
+  endpoint_url      = var.webhook_url
+  extension_schema  = data.pagerduty_extension_schema.custom_incident_action.id
+  extension_objects = [pagerduty_service.example_application_database.id]
 }

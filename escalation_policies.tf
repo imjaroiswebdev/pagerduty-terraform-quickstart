@@ -27,7 +27,7 @@ resource "pagerduty_escalation_policy" "support" {
   rule {
     escalation_delay_in_minutes = 30
     target {
-      type = "user"
+      type = "user_reference"
       id   = pagerduty_user.eddard_stark.id
     }
     target {
@@ -61,7 +61,7 @@ resource "pagerduty_escalation_policy" "operations" {
   rule {
     escalation_delay_in_minutes = 60
     target {
-      type = "user"
+      type = "user_reference"
       id   = pagerduty_user.tywin_lannister.id
     }
     target {
@@ -75,8 +75,8 @@ resource "pagerduty_escalation_policy" "operations" {
   IT Management: Singular escalation path
 */
 resource "pagerduty_escalation_policy" "it_management" {
-  name      = "IT Management (EP)"
-  teams     = [pagerduty_team.it_management.id]
+  name  = "IT Management (EP)"
+  teams = [pagerduty_team.it_management.id]
   rule {
     escalation_delay_in_minutes = 15
     target {
@@ -85,3 +85,4 @@ resource "pagerduty_escalation_policy" "it_management" {
     }
   }
 }
+

@@ -26,8 +26,8 @@ resource "pagerduty_user_contact_method" "catelyn_stark_sms" {
 }
 
 resource "pagerduty_user_contact_method" "catelyn_stark_email" {
-  user_id     = pagerduty_user.catelyn_stark.id
-  type        = "email_contact_method"
-  address     = "catelyn_stark_work@example.com"
-  label       = "Work"
+  user_id = pagerduty_user.catelyn_stark.id
+  type    = "email_contact_method"
+  address = "catelyn_stark_work@example.com"
+  label   = "Work"
 }

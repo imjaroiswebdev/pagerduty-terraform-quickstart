@@ -1,6 +1,6 @@
 # pagerduty-terraform-quickstart
 
-An example quick start Terraform project to provision a PagerDuty environment.  
+An example quick start Terraform project to provision a PagerDuty environment.
 This project covers most of the functionality from the [PagerDuty Provider](https://www.terraform.io/docs/providers/pagerduty/index.html), but is intended for learning/development purposes.
 
 ## Summary Video (TL;DR)
@@ -13,7 +13,6 @@ This project covers most of the functionality from the [PagerDuty Provider](http
   - Access to a domain: https://www.pagerduty.com/sign-up/
   - Access to a REST API Token from target domain: https://support.pagerduty.com/docs/generating-api-keys
   - Incident priority enabled within target domain: https://support.pagerduty.com/docs/incident-priority
-  - (Optional) `rulesets.tf` require [Event Intelligence](https://support.pagerduty.com/docs/event-intelligence) to be enabled on the domain - [Contact our team](https://www.pagerduty.com/contact-us/) for access
 - Terraform:
   - [CLI](https://learn.hashicorp.com/terraform/getting-started/install) - minimum version of v0.13 required
   - [tfswitch](https://medium.com/@warrensbox/how-to-manage-different-terraform-versions-for-each-project-51cca80ccece) - if you need to switch Terraform versions back and forth - i.e. compatibility existing with older projects.
@@ -23,7 +22,7 @@ This project covers most of the functionality from the [PagerDuty Provider](http
 1. Clone repo (via SSH) into appropriate location and enter directory.
 
     ```bash
-    $ git clone git@github.com:giranm/pagerduty-terraform-quickstart.git
+    $ git clone git@github.com:imjaroiswebdev/pagerduty-terraform-quickstart.git
     ```
 
     ```bash
@@ -32,7 +31,7 @@ This project covers most of the functionality from the [PagerDuty Provider](http
 
     > NB - if you cannot clone via SSH, try using HTTPS instead via:
     ```bash
-    $ git clone https://github.com/giranm/pagerduty-terraform-quickstart.git
+    $ git clone https://github.com/imjaroiswebdev/pagerduty-terraform-quickstart.git
     ```
 
 2. Initialise Terraform Workspace
@@ -47,9 +46,9 @@ A successful output should look something like:
 Initializing the backend...
 
 Initializing provider plugins...
-- Finding pagerduty/pagerduty versions matching "1.9.6"...
-- Installing pagerduty/pagerduty v1.9.6...
-- Installed pagerduty/pagerduty v1.9.6 (signed by a HashiCorp partner, key ID 027C6DD1F0707B45)
+- Finding pagerduty/pagerduty versions matching "2.14.5"...
+- Installing pagerduty/pagerduty v2.14.5...
+- Installed pagerduty/pagerduty v2.14.5 (signed by a HashiCorp partner, key ID 027C6DD1F0707B45)
 
 Partner and community providers are signed by their developers.
 If you'd like to know more about provider signing, you can read about it here:

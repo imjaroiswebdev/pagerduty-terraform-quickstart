@@ -15,7 +15,7 @@ resource "pagerduty_response_play" "major_incident_response_play" {
 
   # What should happen when this play runs?
   conference_number = "+1-555-555-5555,,1234#"
-  conference_url = "https://myconference.bridge.com/123-456-678"
+  conference_url    = "https://myconference.bridge.com/123-456-678"
 
   responder {
     type = "escalation_policy_reference"

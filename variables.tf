@@ -15,7 +15,7 @@
   $ terraform apply
 */
 variable "PAGERDUTY_TOKEN" {
-  type    = string
+  type = string
 }
 
 /*

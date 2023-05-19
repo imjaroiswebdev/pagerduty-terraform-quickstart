@@ -14,9 +14,9 @@ resource "pagerduty_schedule" "support_level_1" {
     start                        = "2020-06-21T00:00:00+00:00"
     rotation_virtual_start       = "2020-06-21T07:00:00+00:00"
     rotation_turn_length_seconds = 86400
-    users                        = [
-                                    pagerduty_user.catelyn_stark.id,
-                                  ]
+    users = [
+      pagerduty_user.catelyn_stark.id,
+    ]
     restriction {
       type              = "weekly_restriction"
       start_day_of_week = 1
@@ -53,9 +53,9 @@ resource "pagerduty_schedule" "support_level_1" {
     start                        = "2020-06-21T00:00:00+00:00"
     rotation_virtual_start       = "2020-06-21T07:00:00+00:00"
     rotation_turn_length_seconds = 86400
-    users                        = [
-                                    pagerduty_user.robb_stark.id,
-                                  ]
+    users = [
+      pagerduty_user.robb_stark.id,
+    ]
     restriction {
       type              = "weekly_restriction"
       start_day_of_week = 1
@@ -86,7 +86,7 @@ resource "pagerduty_schedule" "support_level_1" {
       start_time_of_day = "17:00:00"
       duration_seconds  = 57600
     }
-  }  
+  }
 }
 
 /* 
@@ -100,10 +100,10 @@ resource "pagerduty_schedule" "support_level_2" {
     start                        = "2020-06-21T00:00:00+00:00"
     rotation_virtual_start       = "2020-06-21T07:00:00+00:00"
     rotation_turn_length_seconds = 86400
-    users                        = [
-                                    pagerduty_user.arya_stark.id,
-                                    pagerduty_user.sansa_stark.id
-                                  ]
+    users = [
+      pagerduty_user.arya_stark.id,
+      pagerduty_user.sansa_stark.id
+    ]
     restriction {
       type              = "daily_restriction"
       start_time_of_day = "09:00:00"
@@ -123,10 +123,10 @@ resource "pagerduty_schedule" "operations_level_1" {
     start                        = "2020-06-21T00:00:00+00:00"
     rotation_virtual_start       = "2020-06-21T07:00:00+01:00"
     rotation_turn_length_seconds = 604800
-    users                        = [
-                                    pagerduty_user.cersei_lannister.id,
-                                    pagerduty_user.jamie_lannister.id
-                                  ]
+    users = [
+      pagerduty_user.cersei_lannister.id,
+      pagerduty_user.jamie_lannister.id
+    ]
   }
 }
 
@@ -138,10 +138,10 @@ resource "pagerduty_schedule" "operations_level_2" {
     start                        = "2020-06-21T00:00:00+00:00"
     rotation_virtual_start       = "2020-06-21T07:00:00+01:00"
     rotation_turn_length_seconds = 604800
-    users                        = [
-                                    pagerduty_user.tyrion_lannister.id,
-                                    pagerduty_user.lancel_lannister.id
-                                  ]
+    users = [
+      pagerduty_user.tyrion_lannister.id,
+      pagerduty_user.lancel_lannister.id
+    ]
   }
 }
 
@@ -156,9 +156,9 @@ resource "pagerduty_schedule" "it_management" {
     start                        = "2020-06-21T00:00:00+00:00"
     rotation_virtual_start       = "2020-06-21T07:00:00+01:00"
     rotation_turn_length_seconds = 86400
-    users                        = [
-                                    pagerduty_user.daenerys_targaryen.id,
-                                    pagerduty_user.davos_seaworth.id
-                                  ]
+    users = [
+      pagerduty_user.daenerys_targaryen.id,
+      pagerduty_user.davos_seaworth.id
+    ]
   }
 }

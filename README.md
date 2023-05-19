@@ -5,7 +5,7 @@ This project covers most of the functionality from the [PagerDuty Provider](http
 
 ## Summary Video (TL;DR)
 
-[![Watch the video](https://i.ytimg.com/vi/osFY5_t-E8Q/maxresdefault.jpg)](https://youtu.be/c9M5B-Ri3Nc)
+[![Watch the video](https://img.youtube.com/vi/IhR5A0JINvk/0.jpg)](https://www.youtube.com/watch?v=IhR5A0JINvk)
 
 ## Prerequisites
 

@@ -13,6 +13,7 @@ This project covers most of the functionality from the [PagerDuty Provider](http
   - Access to a domain: https://www.pagerduty.com/sign-up/
   - Access to a REST API Token from target domain: https://support.pagerduty.com/docs/generating-api-keys
   - Incident priority enabled within target domain: https://support.pagerduty.com/docs/incident-priority
+  - AIOps add-on enabled in the target domain to make use of Event Orchestration configuration: https://www.pagerduty.com/pricing/aiops/
 - Terraform:
   - [CLI](https://learn.hashicorp.com/terraform/getting-started/install) - minimum version of v0.13 required
   - [tfswitch](https://medium.com/@warrensbox/how-to-manage-different-terraform-versions-for-each-project-51cca80ccece) - if you need to switch Terraform versions back and forth - i.e. compatibility existing with older projects.
